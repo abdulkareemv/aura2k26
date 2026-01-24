@@ -80,6 +80,25 @@ h1 {
     letter-spacing: 4px;
     margin-bottom: 8px;
 }
+.gradient-text {
+    font-size: 4rem;
+    font-weight: 900;
+    background: linear-gradient(270deg, #00ffff, #4ea8de, #8a2be2, #ff66cc);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 10s ease infinite;
+    text-align: center;
+    letter-spacing: 6px;
+    text-shadow: 0 0 14px rgba(138, 43, 226, 0.35);
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 
 h2 {
     font-size: 1.4rem;
