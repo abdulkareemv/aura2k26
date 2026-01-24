@@ -83,14 +83,21 @@ h1 {
 .gradient-text {
     font-size: 4rem;
     font-weight: 900;
-    background: linear-gradient(270deg, #00ffff, #4ea8de, #8a2be2, #ff66cc);
+    background: linear-gradient(
+        270deg,
+        #00ffff,
+        #00ff85,
+        #ffee00,
+        #ff00ff,
+        #00ffff
+    );
     background-size: 800% 800%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientMove 10s ease infinite;
-    text-align: center;
+    animation: gradientMove 6s linear infinite;
     letter-spacing: 6px;
-    text-shadow: 0 0 14px rgba(138, 43, 226, 0.35);
+    text-shadow: 0 0 22px rgba(0, 255, 255, 0.5);
+
 }
 
 @keyframes gradientMove {
