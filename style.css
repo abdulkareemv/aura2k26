@@ -153,18 +153,8 @@ h2 {
     opacity: 0.85;
 }
 
-.waiting {
-    font-size: 1.1rem;
-    margin-top: 12px;
-    color: #f5efff;
-}
 
-footer {
-    margin-top: 24px;
-    font-size: 0.85rem;
-    opacity: 0.8;
-    color: #dcd3ff;
-}
+
 
 /* ANIMATIONS */
 @keyframes rotateBg {
@@ -205,4 +195,30 @@ footer {
     .logo { width: 90px; }
     .logo.college { width: 70px; }
     .time-box { min-width: 72px; }
+}
+
+.waiting {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 5px #ff4ecd;
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        text-shadow: 0 0 20px #ff4ecd, 0 0 40px #6a5cff;
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        text-shadow: 0 0 5px #ff4ecd;
+        transform: scale(1);
+        opacity: 0.8;
+    }
 }
