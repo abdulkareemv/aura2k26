@@ -2,60 +2,270 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AURA 2K26 | Techno-Cultural Fest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AURA 2K26 | State Level Techno-Management Fest</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">AURA 2K26</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#events">Events</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo"><span>AURA 2K26</span></div>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1 data-aos="fade-up">AURA 2K26</h1>
-    <p data-aos="fade-up" data-aos-delay="100">
-      National Level Techno-Cultural Fest
-    </p>
+<nav class="nav-links">
+  <a href="#" class="active">Home</a>
+  <a href="events.html">Events</a>
+  <a href="workshops.html">Workshops</a>
+  <a href="partners.html">Partners</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact</a>
+</nav>
+</header>
 
-    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
-      <a href="#events" class="btn primary">Explore Events</a>
-      <a href="#" class="btn outline">Register Now</a>
+<!-- ================= HERO ================= -->
+  <section class="hero reveal">
+  <div class="hero-content">
+    <h1><span> AURA 2K26</span></h1>
+<p class="tagline">
+  <span>Vision Meets Innovation</span>
+</p>
+<!-- ROTATING WHEEL BELOW HEADING -->
+<div class="wheel-center">
+  <div class="circle-wrapper">
+    <div class="outer-circle">
+      <svg viewBox="0 0 500 500">
+        <defs>
+          <path id="circlePath"
+            d="M250,250
+               m-215,0
+               a215,215 0 1,1 430,0
+               a215,215 0 1,1 -430,0" />
+        </defs>
+        <svg viewBox="0 0 500 500">
+  <defs>
+    <!-- Circle Path -->
+    <path id="circlePath"
+      d="M250,250
+         m-215,0
+         a215,215 0 1,1 430,0
+         a215,215 0 1,1 -430,0" />
+
+    <!-- Gradient for text -->
+    <linearGradient id="textGradient" gradientUnits="userSpaceOnUse"
+  x1="0" y1="0" x2="500" y2="0">
+  <stop offset="0%" stop-color="#22d3ee"/>
+  <stop offset="25%" stop-color="#38bdf8"/>
+  <stop offset="50%" stop-color="#8b5cf6"/>
+  <stop offset="75%" stop-color="#ec4899"/>
+  <stop offset="100%" stop-color="#facc15"/>
+
+  <animateTransform
+    attributeName="gradientTransform"
+    type="rotate"
+    from="0 250 250"
+    to="360 250 250"
+    dur="10s"
+    repeatCount="indefinite" />
+</linearGradient>
+
+  </defs>
+
+  <text>
+    <textPath
+      href="#circlePath"
+      startOffset="0%"
+      textLength="1350"
+      lengthAdjust="spacing"
+      fill="url(#textGradient)">
+      February 16 & 17, 2026 • GWPTC KOTTAKKAL •
+    </textPath>
+  </text>
+</svg>
+
+      </svg>
     </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <h2 data-aos="fade-up">About AURA</h2>
-    <p data-aos="fade-up" data-aos-delay="100">
-      AURA 2K26 is a national-level technical and management fest that brings together
-      innovators, creators, and performers to celebrate technology, creativity,
-      and collaboration.
+<div class="inner-circle">
+  <img 
+    src="https://raw.githubusercontent.com/abdulkareemv/aura2k26/main/images/auralogowb.png"
+    alt="AURA 2K26 Logo"
+    class="inner-logo"
+  >
+</div>
+  </div>
+</div>
+
+    <h3 class="subtitle">State Level Technical & Management Fest</h3>
+
+
+    <p class="desc">
+  Where <strong>technology</strong>, <strong>management</strong>, <strong>culture</strong>,
+  <strong>games</strong> and <strong>fun</strong> come together
+  in one electrifying fest.
+</p>
+
+   <div class="countdown">
+  <div>
+    <span id="days">12</span>
+    <small>DAYS</small>
+  </div>
+  <div>
+    <span id="hours">08</span>
+    <small>HOURS</small>
+  </div>
+  <div>
+    <span id="minutes">45</span>
+    <small>MINUTES</small>
+  </div>
+  <div>
+    <span id="seconds">22</span>
+    <small>SECONDS</small>
+  </div>
+</div>
+    <a href="events.html" class="btn-primary">Explore Events</a>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats reveal">
+  <div><h2>20+</h2><p>Events</p></div>
+  <div><h2>1000+</h2><p>Participants</p></div>
+  <div><h2>₹1.25Lakh+</h2><p>Prize Pool</p></div>
+  <div><h2>2</h2><p>Days</p></div>
+</section>
+
+<!-- ================= EVENTS ================= -->
+
+<section class="about" id="about">
+    <div class="about-content">
+        <h2>About AURA 2K26</h2>
+      <p class="about-text">
+      AURA 2K26 is the flagship state-level Technical and Management Fest of Government Women’s Polytechnic College, Kottakkal, bringing together some of the brightest minds from across the region to compete, innovate, and demonstrate technical brilliance and managerial excellence.
     </p>
+
+    <p class="about-text">
+      Building on the resounding success of AURA 2K25, which witnessed enthusiastic participation and widespread appreciation, AURA 2K26 returns with elevated standards, bigger challenges, and a more immersive experience—promising a dynamic platform for learning, creativity, collaboration, and celebration.
+    </p>
+<section class="abt">
+  <h1 class="abt-title">
+    IGNITE THE <span>AURA</span> WITHIN YOU!
+  </h1>
+
+  <p class="abt-subtext">
+    Don’t miss your chance to be part of one of the most electrifying
+    technical & management fests of the year. Explore exciting events, compete, and
+    showcase your brilliance.
+  </p>
+  <a href="events.html" class="btn-primary">Explore Events</a>
+</section>
+
+
+      
+        <div class="about-features">
+            <div class="feature-card">
+                <i class="fas fa-trophy"></i>
+                <h3>Competitions</h3>
+                <p>Multiple technical & management competitions with exciting prizes worth over ₹1.2Lakh</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovation</h3>
+                <p>Platform to showcase innovative ideas and technical solutions</p>
+            </div>
+          <div class="feature-card">
+          <i class="fas fa-chart-line"></i>
+    <h3>Leadership</h3>
+    <p>Enhance your managerial skills and strategic thinking through dynamic challenges and events.</p>
+</div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Network</h3>
+                <p>Connect with talented students and professionals from various institutions</p>
+            </div>
+        </div>
+    </div>
+
   </section>
 
-  <!-- EVENTS -->
-  <section id="events" class="events">
-    <h2 data-aos="fade-up">Events</h2>
+  <!-- Contact -->
+   <!-- Contact Section -->
+<section class="contact" id="contact">
 
-    <div class="event-grid">
-      <div class="card" data-aos="fade-up">Hackathon</div>
-      <div class="card" data-aos="fade-up" data-aos-delay="50">Robotics</div>
-      <div c
+  <!-- Heading block -->
+  <div class="contact-header">
+    <h2>Contact Us</h2>
+    <p>Have questions? We're here to help!</p>
+  </div>
+
+  <!-- Content grid -->
+  <div class="contact-grid">
+
+    <div class="contact-info">
+      <h3>Location</h3>
+      <iframe 
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.0619602578491!2d75.97794696039988!3d11.020022475149018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64cb176723559%3A0x3f205a49e0c9d845!2sGovt%20Women&#39;s%20Polytechnic%20College!5e0!3m2!1sen!2sin!4v1738122509772!5m2!1sen!2sin"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Government Women's Polytechnic College, Kottakkal</p>
+      <p><i class="fas fa-phone"></i>Dr. Shyju S : 9846 136 929</p>
+      <p><i class="fas fa-phone"></i> Farsana Thasneem : 8089 228 068</p>
+      <p><i class="fas fa-envelope"></i> aura@gwptck.ac.in</p>
+      <p><i class="fas fa-clock"></i> 8:00 AM – 9:00 PM</p>
+    </div>
+
+  </div>
+</section>
+
+
+  
+<!-- ================= FOOTER ================= -->
+  <div class="footer-divider"></div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer reveal" id="contact">
+  <div class="footer-brand">
+    <h3>AURA 2K26</h3>
+    <p>&copy; 2026 AURA. All rights reserved.</p>
+    <div class="footer-social">
+  <a href="https://instagram.com/aura2_k26" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+  </div>
+
+  <div class="footer-links">
+    <h4>Quick Links</h4>
+    <a href="#">Home</a>
+    <a href="events.html">Events</a>
+  </div>
+
+  <div class="footer-contact">
+    <h4>Contact</h4>
+    <p><i class="fas fa-envelope"></i> aura@gwptck.ac.in</p>
+    <p><i class="fas fa-phone"></i>9846 136 929</p>
+  </div>
+</footer>
+
+
+
+   
+<script src="script.js"></script>
+</body>
+</html>
