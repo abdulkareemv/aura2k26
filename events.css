@@ -200,7 +200,7 @@ body {
 /* ================= EVENTS TITLE ================= */
 .events-title {
   text-align: center;
-  padding: 6rem 1rem 3rem;
+  padding: 6rem 1rem 1.5rem;
 }
 
 .events-title h1 {
@@ -216,7 +216,7 @@ body {
 }
 .day-heading {
   text-align: center;
-  margin: 60px 0 30px;
+  margin: 30px 0 20px;
 }
 
 .day-heading span {
@@ -231,6 +231,30 @@ body {
   -webkit-text-fill-color: transparent;
 
   animation: slideGlow 1.2s ease-out forwards;
+}
+.wave-text {
+  display: inline-block;
+}
+
+.wave-text span {
+  display: inline-block;
+  animation: waveLTR 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes waveLTR {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px) translateY(10px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(0) translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
 }
 
 /* Animation */
@@ -936,6 +960,29 @@ flex-shrink: 0;
     text-align: center;
   }
 }
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.follow-text {
+  font-size: 0.9rem;
+  color:  #6b7280; /* gray */
+}
+
+.footer-social a {
+  font-size: 1.2rem;
+  color: #e1306c;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social a:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+
 
 /*--- Mobile Touch effect--*/
 /* ================= MOBILE TOUCH HOVER ================= */
