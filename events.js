@@ -215,3 +215,17 @@ touchElements.forEach(el => {
     el.classList.remove("touch-active");
   });
 });
+document.querySelectorAll('.event-card').forEach(card => {
+    card.addEventListener('touchstart', () => {
+      document.querySelectorAll('.event-card')
+        .forEach(c => c.classList.remove('touch-active'));
+      card.classList.add('touch-active');
+    });
+  });
+
+  document.addEventListener('touchstart', e => {
+    if (!e.target.closest('.event-card')) {
+      document.querySelectorAll('.event-card')
+        .forEach(c => c.classList.remove('touch-active'));
+    }
+  });
