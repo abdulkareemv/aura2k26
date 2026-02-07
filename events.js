@@ -7,6 +7,7 @@ const modalTime = document.getElementById("modalTime");
 const modalVenue = document.getElementById("modalVenue");
 const eventModal = document.getElementById("eventModal");
 
+
 /* ===================== OPEN MODAL ===================== */
 function openEventModal(card) {
 
