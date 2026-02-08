@@ -1,6 +1,6 @@
 function openSunleaf() {
   document.getElementById("companyName").innerText =
-    "Sunleaf Free Energy Solutions";
+    "Sunleaf Energy Solutions";
 
   document.getElementById("companyIndustry").innerText =
     "Renewable Energy | EV & Lithium Battery Manufacturing";
@@ -17,7 +17,7 @@ function openSunleaf() {
       <li>EV Technician / EV Mechanic</li>
     </ul>
 
-    <strong>Qualifications Required:</strong>
+    <strong>Qualifications:</strong>
     <ul>
       <li>Diploma / B.Tech in Electronics</li>
       <li>Diploma / B.Tech in Electrical</li>
@@ -46,7 +46,7 @@ function openBritco() {
       <li>Trainer</li>
     </ul>
 
-    <strong>Qualifications Required:</strong>
+    <strong>Qualifications:</strong>
     <ul>
       <li>Diploma in EC / EL / EEE / CHM</li>
     </ul>
@@ -61,6 +61,63 @@ function openBritco() {
   document.getElementById("companyModal").style.display = "flex";
 }
 
+function openEqualhire() {
+  document.getElementById("companyName").innerText =
+    "EQUALHIRE Logitech India Pvt. Ltd.";
+
+  document.getElementById("companyIndustry").innerText =
+    "";
+
+  document.getElementById("companyDetails").innerHTML = `
+    <strong>Vacancy Area:</strong>
+    <ul>
+      <li></li>
+    </ul>
+
+    <strong>Job Roles:</strong>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <strong>Qualifications:</strong>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+  `;
+
+  document.getElementById("companyModal").style.display = "flex";
+}
+
+function openSFO() {
+  document.getElementById("companyName").innerText =
+    "EQUALHIRE Logitech India Pvt. Ltd.";
+
+  document.getElementById("companyIndustry").innerText =
+    "";
+
+  document.getElementById("companyDetails").innerHTML = `
+    <strong>Vacancy Area:</strong>
+    <ul>
+      <li></li>
+    </ul>
+
+    <strong>Job Roles:</strong>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <strong>Qualifications:</strong>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+  `;
+
+  document.getElementById("companyModal").style.display = "flex";
+}
 function closeCompany() {
   document.getElementById("companyModal").style.display = "none";
 }
