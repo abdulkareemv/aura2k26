@@ -262,7 +262,7 @@ body {
 
 .logo-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(120px,400px));
+  grid-template-columns: repeat(2, minmax(120px,330px));
   gap: 25px;
   margin: 40px 0;
   justify-content: center;
