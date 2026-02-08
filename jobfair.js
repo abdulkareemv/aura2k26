@@ -92,7 +92,7 @@ function openEqualhire() {
 
 function openSFO() {
   document.getElementById("companyName").innerText =
-    "EQUALHIRE Logitech India Pvt. Ltd.";
+    "SFO Technologies";
 
   document.getElementById("companyIndustry").innerText =
     "";
