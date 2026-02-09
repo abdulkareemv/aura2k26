@@ -275,6 +275,7 @@ body {
 .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1200px;
   gap: 2rem;
   padding: 3rem 6%;
 }
