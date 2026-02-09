@@ -104,29 +104,42 @@ function openSFO() {
     "SFO Technologies";
 
   document.getElementById("companyIndustry").innerText =
-    "";
+    "Electronics Manufacturing & Technology Services";
 
   document.getElementById("companyDetails").innerHTML = `
-    <strong>Vacancy Area:</strong>
+    <strong>Vacancies:</strong>
     <ul>
-      <li></li>
+      <li>75+ Positions</li>
     </ul>
 
-    <strong>Job Roles:</strong>
+    <strong>Job Role:</strong>
     <ul>
-      <li></li>
-      <li></li>
+      <li>Operator Trainee</li>
     </ul>
 
     <strong>Qualifications:</strong>
     <ul>
-      <li></li>
-      <li></li>
+      <li>Diploma</li>
+      <li>ITI</li>
+      <li>VHSE</li>
     </ul>
+
+    <strong>Eligibility Criteria:</strong>
+    <ul>
+      <li>Age between 18 to 27 years</li>
+      <li>Preferred: Male candidates</li>
+      <li>Departments: Various</li>
+    </ul>
+
+    <em style="font-size: 0.9rem; opacity: 0.85;">
+      * Female candidates will be shortlisted and considered for upcoming openings as per future requirements.
+    </em>
   `;
 
   document.getElementById("companyModal").style.display = "flex";
 }
+
+
 function closeCompany() {
   document.getElementById("companyModal").style.display = "none";
 }
