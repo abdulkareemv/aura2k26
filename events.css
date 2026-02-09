@@ -400,6 +400,29 @@ transition: background 0.5s ease, color 0.5s ease;
   color: #94a3b8;
   font-size: 0.95rem;
 }
+.event-prize {
+  margin: 8px 0 14px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+
+  color: #fde68a; /* soft premium gold */
+
+  font-family: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+.event-prize span {
+  background: linear-gradient(
+    90deg,
+    #fde047,  /* warm gold */
+    #f472b6,  /* rose */
+    #60a5fa   /* sky blue */
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /* Button */
 .event-btn {
