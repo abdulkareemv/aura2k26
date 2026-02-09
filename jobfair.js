@@ -8,10 +8,10 @@ function openSunleaf() {
   document.getElementById("companyDetails").innerHTML = `
     <strong>Vacancy Area:</strong>
     <ul>
-      <li>Lithium Battery & EV Manufacturing Unit</li>
+      <li>Lithium Battery & EV Manufacturing Unit, Office Section</li>
     </ul>
 
-    <strong>Job Roles:</strong>
+    <strong>Job Role 1:</strong>
     <ul>
       <li>Lithium Battery Technician</li>
       <li>EV Technician / EV Mechanic</li>
@@ -19,8 +19,17 @@ function openSunleaf() {
 
     <strong>Qualifications:</strong>
     <ul>
-      <li>Diploma / B.Tech in Electronics</li>
+      <li>Diploma / B.Tech in Electronics (EC, EL, IE,...)</li>
       <li>Diploma / B.Tech in Electrical</li>
+    </ul>
+    <strong>Job Role 2:</strong>
+    <ul>
+      <li>Office Section</li>
+    </ul>
+
+    <strong>Qualifications:</strong>
+    <ul>
+      <li>Diploma in Computer Application & Business Management</li>
     </ul>
   `;
 
