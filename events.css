@@ -426,6 +426,32 @@ transition: background 0.5s ease, color 0.5s ease;
   transition: all 0.35s ease;
 }
 
+.other-events-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 18px;   /* gap from left & right edges */
+}
+
+.other-events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+/* Reuse event-card styling */
+.other-card {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Button spacing fix */
+.other-card .event-btn {
+  margin-top: 18px;
+}
+
+
 
 
  .footer-social i {
