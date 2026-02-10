@@ -670,7 +670,8 @@ flex-shrink: 0;
 }
 #modalTime,
 #modalDate,
-#modalVenue {
+#modalVenue,
+#modalGroupSize{
   color: #ffffff;
   font-size: 1.1rem;   /* adjust if you want bigger/smaller */
   font-weight: 700;
@@ -860,6 +861,78 @@ flex-shrink: 0;
 @media (hover: hover) {
   .coordinator-card:hover {
     transform: scale(1.03);
+  }
+}
+
+/* ================= IMPORTANT MESSAGE ================= */
+.important-box {
+  display: none;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 18px;
+  margin: 22px 0 12px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+
+  background: linear-gradient(
+    135deg,
+    rgba(250, 204, 21, 0.22),
+    rgba(251, 113, 133, 0.22)
+  );
+
+  border-left: 5px solid #facc15;
+  box-shadow:
+    0 0 0 1px rgba(250,204,21,0.25),
+    0 10px 25px rgba(0,0,0,0.25);
+
+  animation:
+    importantFadeIn 0.45s ease-out,
+    importantPulse 2.5s ease-in-out infinite;
+
+  backdrop-filter: blur(6px);
+}
+
+/* Icon emphasis */
+.important-box i {
+  color: #facc15;
+  font-size: 1.25rem;
+  margin-top: 2px;
+  animation: iconWiggle 2.5s ease-in-out infinite;
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes importantFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes importantPulse {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px rgba(250,204,21,0.25),
+      0 10px 25px rgba(0,0,0,0.25);
+  }
+  50% {
+    box-shadow:
+      0 0 0 2px rgba(250,204,21,0.45),
+      0 14px 35px rgba(250,204,21,0.25);
+  }
+}
+
+@keyframes iconWiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-6deg);
   }
 }
 
