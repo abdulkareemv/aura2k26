@@ -6,32 +6,29 @@ function openSunleaf() {
     "Renewable Energy | EV & Lithium Battery Manufacturing";
 
   document.getElementById("companyDetails").innerHTML = `
-    <strong>Vacancy Area:</strong>
-    <ul>
-      <li>Lithium Battery & EV Manufacturing Unit, Office Section</li>
-    </ul>
+  <p><strong>Location:</strong> Kondotty</p>
+  <p><strong>Vacancy Area:</strong> Lithium Battery & EV Manufacturing Unit, Office Section</p>
 
-    <strong>Job Role 1:</strong>
-    <ul>
-      <li>Lithium Battery Technician</li>
-      <li>EV Technician / EV Mechanic</li>
-    </ul>
+  <strong>Job Role 1:</strong>
+  <ul>
+    <li>Lithium Battery Technician</li>
+    <li>EV Technician / EV Mechanic</li>
+  </ul>
 
-    <strong>Qualifications:</strong>
-    <ul>
-      <li>Diploma / B.Tech in Electronics (EC, EL, IE,...)</li>
-      <li>Diploma / B.Tech in Electrical</li>
-    </ul>
-    <strong>Job Role 2:</strong>
-    <ul>
-      <li>Office Section</li>
-    </ul>
+  <p><strong>Qualifications:</strong>Diploma / B.Tech in Electronics (EC, EL, IE, etc.) and Electrical</p>
 
-    <strong>Qualifications:</strong>
-    <ul>
-      <li>Diploma in Computer Application & Business Management</li>
-    </ul>
-  `;
+  <p><strong>Job Role 2:</strong>Office Section</p>
+
+ <p> <strong>Qualifications:</strong>Diploma in Computer Application and  Business Management</p>
+
+  <strong>Training & Employment Details:</strong>
+  <ul>
+    <li>Training Period: 3 Months (Stipend ₹5,000/month)</li>
+    <li>Probation Period: 2 Months after Training</li>
+    <li>Salary During Probation: ₹10,000</li>
+    <li>Confirmed Employment Salary: ₹12,000</li>
+  </ul>
+`;
 
   document.getElementById("companyModal").style.display = "flex";
 }
@@ -107,34 +104,30 @@ function openSFO() {
     "Electronics Manufacturing & Technology Services";
 
   document.getElementById("companyDetails").innerHTML = `
-    <strong>Vacancies:</strong>
-    <ul>
-      <li>75+ Positions</li>
-    </ul>
+  <p><strong>Vacancies:</strong> 75+ Positions</p>
+  <p><strong>Job Role:</strong> Operator Trainee</p>
+   <p><strong>Salary:</strong> ₹15,000/- CTC </p>
+   <p><strong>Additional:</strong> Shift allowance, overtime allowance</p>
+  <p><strong>Location:</strong> Kakkanad, Kochi</p>
+ 
+  <strong>Qualifications:</strong>
+  <ul>
+    <li>Diploma</li>
+    <li>ITI</li>
+    <li>VHSE</li>
+  </ul>
 
-    <strong>Job Role:</strong>
-    <ul>
-      <li>Operator Trainee</li>
-    </ul>
+  <strong>Eligibility Criteria:</strong>
+  <ul>
+    <li>Age between 18 to 27 years</li>
+    <li>Preferred: Male candidates</li>
+    <li>Departments: Various</li>
+  </ul>
 
-    <strong>Qualifications:</strong>
-    <ul>
-      <li>Diploma</li>
-      <li>ITI</li>
-      <li>VHSE</li>
-    </ul>
-
-    <strong>Eligibility Criteria:</strong>
-    <ul>
-      <li>Age between 18 to 27 years</li>
-      <li>Preferred: Male candidates</li>
-      <li>Departments: Various</li>
-    </ul>
-
-    <em style="font-size: 0.9rem; opacity: 0.85;">
-      * Female candidates will be shortlisted and considered for upcoming openings as per future requirements.
-    </em>
-  `;
+  <em style="font-size: 0.9rem; opacity: 0.85;">
+    * Female candidates will be shortlisted and considered for upcoming openings as per future requirements.
+  </em>
+`;
 
   document.getElementById("companyModal").style.display = "flex";
 }
