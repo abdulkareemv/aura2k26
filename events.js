@@ -6,6 +6,8 @@ const modalDate = document.getElementById("modalDate");
 const modalTime = document.getElementById("modalTime");
 const modalVenue = document.getElementById("modalVenue");
 const eventModal = document.getElementById("eventModal");
+const modalGroupSize = document.getElementById("modalGroupSize");
+const modalImportant = document.getElementById("modalImportant");
 
 
 /* ===================== OPEN MODAL ===================== */
@@ -18,6 +20,7 @@ function openEventModal(card) {
   modalDate.innerText = card.dataset.date || "";
   modalTime.innerText = card.dataset.time || "";
   modalVenue.innerText = card.dataset.venue || "";
+modalGroupSize.innerText = card.dataset.groupsize || "—";
 
 /* ========== EVENT ICON ========== */
 
@@ -135,6 +138,19 @@ modalIconBox.innerHTML = `<i class="fa-solid ${iconClass}"></i>`;
     staffBox.innerHTML.trim() || studentBox.innerHTML.trim()
       ? "block"
       : "none";
+/* ========== IMPORTANT MESSAGE ========== */
+const importantMsg = card.dataset.important;
+
+if (modalImportant) {
+  if (importantMsg) {
+    modalImportant.innerHTML =
+      `<i class="fas fa-circle-info"></i> ${importantMsg}`;
+    modalImportant.style.display = "flex";
+  } else {
+    modalImportant.style.display = "none";
+  }
+}
+
 
 /* ========== REGISTRATION BUTTON ========== */
 const registerBtn = document.getElementById("registerBtn");
@@ -177,10 +193,7 @@ setTimeout(() => {
   /* ========== SHOW MODAL ========== */
   eventModal.classList.add("active");
   document.body.style.overflow = "hidden";
-  // Reset modal scroll after it becomes visible
-setTimeout(() => {
-    modalContent.scrollTop = 0;
-}, 10);
+
 }
 
 /* ===================== CLOSE MODAL ===================== */
