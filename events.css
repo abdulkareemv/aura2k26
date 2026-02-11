@@ -278,13 +278,14 @@ body {
   max-width: 1200px;
   gap: 2rem;
   padding: 3rem 6%;
-    justify-items: center;
+  justify-items: center;
    margin: 0 auto;
 }
 
 /* ================= EVENT CARD ================= */
 .event-card {
-  
+  width: 100%;
+  max-width: 320px; 
   border-radius: 20px;
   
   padding: 2rem;
@@ -1169,4 +1170,3 @@ flex-shrink: 0;
 }
 
   </style>
-</head>
