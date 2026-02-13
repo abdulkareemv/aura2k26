@@ -71,30 +71,48 @@ function openEqualhire() {
   document.getElementById("companyName").innerText =
     "EQUALHIRE Logitech India Pvt. Ltd.";
 
-  document.getElementById("companyIndustry").innerText =
-    "";
+  document.getElementById("companyIndustry").innerText = "";
 
   document.getElementById("companyDetails").innerHTML = `
-    <strong>Vacancy Area:</strong>
+    <strong>Recruiting For:</strong>
     <ul>
-      <li></li>
+      <li>
+        <strong>1. Tata Advanced Systems Ltd.</strong><br>
+        Aerospace Manufacturing Plant – Bangalore<br>
+        <span style="color:#ef4444;font-weight:600;">
+          No Backlogs Allowed
+        </span>
+      </li>
+
+      <li style="margin-top:10px;">
+        <strong>2. Ashok Leyland – Plant 2</strong><br>
+        Automobile Manufacturing Plant – Hosur
+      </li>
+
+      <li style="margin-top:10px;">
+        <strong>3. Tata Electronics</strong><br>
+        Mobile Phone Manufacturing Unit – Hosur
+      </li>
     </ul>
 
-    <strong>Job Roles:</strong>
-    <ul>
-      <li></li>
-      <li></li>
-    </ul>
+   <div style="margin-top:15px; font-weight:700; font-size:15px; color:#e11d48;">
+  For Females: Any trade can apply.
+</div>
 
-    <strong>Qualifications:</strong>
-    <ul>
-      <li></li>
-      <li></li>
-    </ul>
+
+    <!-- Image Section (Always Visible) -->
+    <div style="margin-top:20px; text-align:center;">
+      <img src="https://res.cloudinary.com/dpowgp2dw/image/upload/v1770997704/equalhire_details_gk2mkq.jpg" 
+           alt="Recruitment Image"
+           style="max-width:100%; border-radius:12px; 
+                  box-shadow:0 10px 25px rgba(0,0,0,0.3);" />
+    </div>
   `;
 
   document.getElementById("companyModal").style.display = "flex";
 }
+
+
 
 function openSFO() {
   document.getElementById("companyName").innerText =
