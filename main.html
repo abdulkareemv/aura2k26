@@ -1,18 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Events | AURA 2K26</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AURA 2K26 | State Level Techno-Management Fest</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-
   <!-- CSS -->
-  <link rel="stylesheet" href="schedule.css">
+  <link rel="stylesheet" href="style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KP60S62T4H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KP60S62T4H');
+</script>
 </head>
 <body>
 
@@ -27,97 +34,216 @@
 </label>
 
 <nav class="nav-links">
-  <a href="main.html">Home</a>
+  <a href="#" class="active">Home</a>
   <a href="events.html">Events</a>
-  <a href="#" class="active">Schedule</a>
-  <a href="">Job Fair</a>
-  <a href="main.html#about">About Us</a>
-  <a href="main.html#contact">Contact</a>
+  <a href="">Workshops</a>
+  <a href="jobfair.html">Job Fair</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact</a>
 </nav>
 </header>
 
-<!-- ================= BODY ================= -->
+<!-- ================= HERO ================= -->
+  <section class="hero reveal">
+  <div class="hero-content">
+    <h1><span> AURA 2K26</span></h1>
+<p class="tagline">
+  <span>Vision Meets Innovation</span>
+</p>
+<!-- ROTATING WHEEL BELOW HEADING -->
+<div class="wheel-center">
+  <div class="circle-wrapper">
+    <div class="outer-circle">
+      <svg viewBox="0 0 500 500">
+        <defs>
+          <path id="circlePath"
+            d="M250,250
+               m-215,0
+               a215,215 0 1,1 430,0
+               a215,215 0 1,1 -430,0" />
+        </defs>
+        <svg viewBox="0 0 500 500">
+  <defs>
+    <!-- Circle Path -->
+    <path id="circlePath"
+      d="M250,250
+         m-215,0
+         a215,215 0 1,1 430,0
+         a215,215 0 1,1 -430,0" />
 
+    <!-- Gradient for text -->
+    <linearGradient id="textGradient" gradientUnits="userSpaceOnUse"
+  x1="0" y1="0" x2="500" y2="0">
+  <stop offset="0%" stop-color="#22d3ee"/>
+  <stop offset="25%" stop-color="#38bdf8"/>
+  <stop offset="50%" stop-color="#8b5cf6"/>
+  <stop offset="75%" stop-color="#ec4899"/>
+  <stop offset="100%" stop-color="#facc15"/>
 
-<section class="schedule-section">
+  <animateTransform
+    attributeName="gradientTransform"
+    type="rotate"
+    from="0 250 250"
+    to="360 250 250"
+    dur="10s"
+    repeatCount="indefinite" />
+</linearGradient>
 
-<h1 class="schedule-title">
-  <span class="gradient-text">AURA 2026</span> Schedule
-</h1>
+  </defs>
 
-<div class="day-buttons">
-  <button class="day-btn active" onclick="showDay(1)">Day 1 - February 16</button>
-  <button class="day-btn" onclick="showDay(2)">Day 2 -February 17</button>
+  <text>
+    <textPath
+      href="#circlePath"
+      startOffset="0%"
+      textLength="1350"
+      lengthAdjust="spacing"
+      fill="url(#textGradient)">
+      February 16 & 17, 2026 • GWPTC KOTTAKKAL •
+    </textPath>
+  </text>
+</svg>
+
+      </svg>
+    </div>
+
+<div class="inner-circle">
+  <img 
+    src="https://raw.githubusercontent.com/abdulkareemv/aura2k26/main/images/auralogowb.png"
+    alt="AURA 2K26 Logo"
+    class="inner-logo"
+  >
+</div>
+  </div>
 </div>
 
-<!-- ================= DAY 1 ================= -->
+    <h3 class="subtitle">State Level Technical & Management Fest</h3>
 
-   <div id="day1" class="schedule-wrapper active">
-  <div class="schedule-row header">
-    <div>Event</div>
-    <div>Time</div>
-    <div>Venue</div>
+
+    <p class="desc">
+  Where <strong>technology</strong>, <strong>management</strong>, <strong>culture</strong>,
+  <strong>games</strong> and <strong>fun</strong> come together
+  in one electrifying fest.
+</p>
+
+   <div class="countdown">
+  <div>
+    <span id="days">12</span>
+    <small>DAYS</small>
   </div>
-
-  <div class="schedule-row special-event"><div>Arduino Blitz – Arduino Prototyping</div><div>10:00 AM</div><div>ICFC (Room #218)</div></div>
-  <div class="schedule-row special-event"><div>Innofest – Best Project Contest (School Students)</div><div>10:00 AM</div><div>-</div></div>
-  <div class="schedule-row special-event"><div>Heat N Beat – Soldering Competition</div><div>10:00 AM</div><div>Basic Instrumentation Lab (Room #113)</div></div>
-  <div class="schedule-row special-event"><div>C Fresh – C Programming Contest</div><div>10:00 AM</div><div>CABM Lab (Room #219)</div></div>
-  <div class="schedule-row special-event"><div>Ideathon – Startup Idea Presentation</div><div>10:00 AM</div><div>Conference Hall (Room #204)</div></div>
-  <div class="schedule-row special-event"><div>Techno Quest – Technical Quiz</div><div>11:00 AM</div><div>Drawing Hall (Room #306)</div></div>
-  <div class="schedule-row special-event"><div>Samvad – Mock Press Conference</div><div>12:00 PM</div><div>Conference Hall (Room #204)</div></div>
-  <div class="schedule-row special-event"><div>Debug X – Circuit Debugging</div><div>1:00 PM</div><div>Circuit Lab (Room #206)</div></div>
-  <div class="schedule-row special-event"><div>Tech Talk – Seminar Contest</div><div>1:00 PM</div><div>Room #307</div></div>
-  <div class="schedule-row special-event"><div>AURA Hunt – Decode. Discover. Dominate.</div><div>1:00 PM</div><div>Room #304</div></div>
-  <div class="schedule-row"><div>Exhibition</div><div>9:30 AM – 4:00 PM</div><div>-</div></div>
-  <div class="schedule-row"><div>Food Fest</div><div>9:30 AM – 4:00 PM</div><div>Car Porch</div></div>
-  <div class="schedule-row"><div>Game Zone & Fun Zone</div><div>9:30 AM – 4:00 PM</div><div>Campus</div></div>
-  <div class="schedule-row"><div>Cultural Gala</div><div>10:00 AM – 4:00 PM</div><div>AURA Main Stage</div></div>
-  <div class="schedule-row"><div>Stalls</div><div>9:30 AM – 4:00 PM</div><div>Campus</div></div>
-
+  <div>
+    <span id="hours">08</span>
+    <small>HOURS</small>
+  </div>
+  <div>
+    <span id="minutes">45</span>
+    <small>MINUTES</small>
+  </div>
+  <div>
+    <span id="seconds">22</span>
+    <small>SECONDS</small>
+  </div>
 </div>
+    <a href="events.html" class="btn-primary">Explore Events</a>
   </div>
-<!-- ================= DAY 2 ================= -->
-<div id="day2" class="schedule-wrapper">
-
-  <div class="schedule-row header">
-    <div>Event</div>
-    <div>Time</div>
-    <div>Venue</div>
-  </div>
-<div class="schedule-row inaug-event"><div>Inaugural Ceremony</div><div>10:00 AM</div><div>AURA Main Stage</div></div>
-  <div class="schedule-row highlight-event"><div>JobScape – Job Fair</div><div>9:30 AM</div><div>-</div></div>
-  <div class="schedule-row special-event"><div>TrackBot – Line Follower Grand Prix</div><div>10:00 AM</div><div>Communication Lab (Room #209)</div></div>
-  <div class="schedule-row special-event"><div>HobbIT – Hobby Circuit Making</div><div>10:00 AM</div><div>Circuit Lab (Room #206)</div></div>
-  <div class="schedule-row special-event"><div>Logic Relay Challenge – Relay Circuit</div><div>10:30 AM</div><div>Basic Instrumentation Lab (Room #113)</div></div>
-  <div class="schedule-row special-event"><div>Oracy – Best Manager</div><div>11:00 AM</div><div>Conference Hall (Room #204)</div></div>
-  <div class="schedule-row cultural-event"><div>Fashion Show – Style & Expression</div><div>1:00 PM</div><div>Stage</div></div>
-  <div class="schedule-row"><div>Exhibition</div><div>9:30 AM – 4:00 PM</div><div>-</div></div>
-  <div class="schedule-row"><div>Food Fest</div><div>9:30 AM – 4:00 PM</div><div>Car Porch</div></div>
-  <div class="schedule-row"><div>Game Zone & Fun Zone</div><div>9:30 AM – 4:00 PM</div><div>Campus</div></div>
-  <div class="schedule-row"><div>Cultural Gala</div><div>11:00 AM – 1:00 PM</div><div>AURA Main Stage</div></div>
-  <div class="schedule-row"><div>Stalls</div><div>9:30 AM – 4:00 PM</div><div>Campus</div></div>
-
-</div>
-
 </section>
 
-<div class="event-btn-container">
-  <a href="https://aura2k26.in/events" class="event-details-btn">
-    Event Details and Registration
-  </a>
+<!-- ================= STATS ================= -->
+<section class="stats reveal">
+  <div><h2>20+</h2><p>Events</p></div>
+  <div><h2>1000+</h2><p>Participants</p></div>
+  <div><h2>₹1.25Lakh+</h2><p>Prize Pool</p></div>
+  <div><h2>2</h2><p>Days</p></div>
+</section>
+
+<!-- ================= EVENTS ================= -->
+
+<section class="about" id="about">
+    <div class="about-content">
+        <h2>About AURA 2K26</h2>
+      <p class="about-text">
+      AURA 2K26 is the flagship state-level Technical and Management Fest of Government Women’s Polytechnic College, Kottakkal, bringing together some of the brightest minds from across the region to compete, innovate, and demonstrate technical brilliance and managerial excellence.
+    </p>
+
+    <p class="about-text">
+      Building on the resounding success of AURA 2K25, which witnessed enthusiastic participation and widespread appreciation, AURA 2K26 returns with elevated standards, bigger challenges, and a more immersive experience—promising a dynamic platform for learning, creativity, collaboration, and celebration.
+    </p>
+<section class="abt">
+  <h1 class="abt-title">
+    IGNITE THE <span>AURA</span> WITHIN YOU!
+  </h1>
+
+  <p class="abt-subtext">
+    Don’t miss your chance to be part of one of the most electrifying
+    technical & management fests of the year. Explore exciting events, compete, and
+    showcase your brilliance.
+  </p>
+  <a href="events.html" class="btn-primary">Explore Events</a>
+</section>
+
+
+      
+        <div class="about-features">
+            <div class="feature-card">
+                <i class="fas fa-trophy"></i>
+                <h3>Competitions</h3>
+                <p>Multiple technical & management competitions with exciting prizes worth over ₹1.2Lakh</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovation</h3>
+                <p>Platform to showcase innovative ideas and technical solutions</p>
+            </div>
+          <div class="feature-card">
+          <i class="fas fa-chart-line"></i>
+    <h3>Leadership</h3>
+    <p>Enhance your managerial skills and strategic thinking through dynamic challenges and events.</p>
 </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Network</h3>
+                <p>Connect with talented students and professionals from various institutions</p>
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+   <!-- Contact Section -->
+<section class="contact" id="contact">
+
+  <!-- Heading block -->
+  <div class="contact-header">
+    <h2>Contact Us</h2>
+    <p>Have questions? We're here to help!</p>
+  </div>
+
+  <!-- Content grid -->
+  <div class="contact-grid">
+
+    <div class="contact-info">
+      <h3>Location</h3>
+      <iframe 
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.0619602578491!2d75.97794696039988!3d11.020022475149018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64cb176723559%3A0x3f205a49e0c9d845!2sGovt%20Women&#39;s%20Polytechnic%20College!5e0!3m2!1sen!2sin!4v1738122509772!5m2!1sen!2sin"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Government Women's Polytechnic College, Kottakkal</p>
+      <p><i class="fas fa-phone"></i>Dr. Shyju S : 9846 136 929</p>
+      <p><i class="fas fa-phone"></i> Farsana Thasneem : 8089 228 068</p>
+      <p><i class="fas fa-envelope"></i> aura@gwptck.ac.in</p>
+      <p><i class="fas fa-clock"></i> 8:00 AM – 9:00 PM</p>
+    </div>
+
+  </div>
+</section>
 
 
   
-  
-  
-  
-  
-  
-  
-  
-    
 <!-- ================= FOOTER ================= -->
   <div class="footer-divider"></div>
 
@@ -127,17 +253,17 @@
     <h3>AURA 2K26</h3>
     <p>&copy; 2026 AURA. All rights reserved.</p>
     <div class="footer-social">
+      <span class="follow-text">Follow us on</span>
   <a href="https://instagram.com/aura2_k26" target="_blank" aria-label="Instagram">
     <i class="fab fa-instagram"></i>
   </a>
 </div>
-
   </div>
 
   <div class="footer-links">
     <h4>Quick Links</h4>
-    <a href="main.html">Home</a>
-    <a href="#">Events</a>
+    <a href="#">Home</a>
+    <a href="events.html">Events</a>
   </div>
 
   <div class="footer-contact">
@@ -146,9 +272,10 @@
     <p><i class="fas fa-phone"></i>9846 136 929</p>
   </div>
 </footer>
- 
 
- 
- <script>schedule.js</script> 
+
+
+   
+<script src="script.js"></script>
 </body>
 </html>
