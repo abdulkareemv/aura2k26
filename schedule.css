@@ -210,14 +210,14 @@ body {
 /* ================= SCHEDULE SECTION ================= */
 
 .schedule-section {
-  padding: 90px 6%;
+  padding: 40px 6%;
 }
 
 .schedule-title {
   text-align: center;
   font-size: 2.8rem;
   font-weight: 800;
-  margin-bottom: 20px;
+  padding: 4rem 6% 1.5rem;
 }
 
 .gradient-text {
@@ -277,7 +277,7 @@ body {
   padding: 16px 18px;
   margin-bottom: 12px;
   border-radius: 16px;
-
+align-items: center; /* 🔥 THIS centers vertically */
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
 
@@ -488,11 +488,24 @@ body {
   }
 }
 
+
+@keyframes blinkTime {
+  0% { opacity: 1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+.blink-time {
+  color: #ff3c00;
+  font-weight: 700;
+  animation: blinkTime 1s infinite;
+}
+
 /* ================= EVENT DETAILS BUTTON ================= */
 
 .event-btn-container {
   text-align: center;
-  margin-top: -30px;
+  
   margin-bottom: 40px;
 }
 
