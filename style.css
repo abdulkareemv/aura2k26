@@ -378,6 +378,15 @@ body {
   gap: 3rem;   /* space between buttons */
 }
 
+
+/* Small screens */
+@media (max-width: 600px) {
+  .btn-group {
+    flex-wrap: wrap;     /* Allow buttons to move to next line */
+    gap: 1.5rem 2rem;    /* row-gap column-gap */
+  }
+}
+
 .btn-primary {
   display: inline-block;
   padding: 0.95rem 2.8rem;
