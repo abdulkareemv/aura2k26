@@ -539,6 +539,19 @@ align-items: center; /* 🔥 THIS centers vertically */
   transform: scale(0.97);
 }
 
+/* Blinking NEW tag */
+.new-tag {
+  color: #ff004c;
+  font-weight: 700;
+  animation: blinkNew 1s infinite;
+}
+
+/* Smooth blink effect */
+@keyframes blinkNew {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 
 
